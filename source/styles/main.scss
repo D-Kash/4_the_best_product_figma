@@ -1,2 +1,9 @@
-body 
-    text-align: center
+@import './mixins.scss';
+@import './constants.scss';
+@import './fonts.scss';
+@import './home-section.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
