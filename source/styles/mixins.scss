@@ -4,3 +4,26 @@
     text-align: center;
     letter-spacing: 0.2px;
 }
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;    
+}
+
+@mixin btn {
+    border-radius: 35px;
+    background: #2091F9;
+    font-size: 20px;
+    padding: 16px 62px;
+    border: none;
+    color: $white;
+    font-family: $primaryFontsLight;
+    :focus {
+        opacity: 0.5;
+    }
+}

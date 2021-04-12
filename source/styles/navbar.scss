@@ -1,0 +1,27 @@
+.navbar {
+    padding-top: 68px;
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    &-content{
+        @include flex-row;
+        align-items: center;
+        &__items a {
+            font-size: 15px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: $white;
+            margin: 0 20.5px;
+            text-decoration: none;
+            font-family: $primaryFontsLight;
+        }
+        &__logo img {
+            margin-left: 25px;
+        }
+    }
+    &-social-links img{
+        margin: 0 15px;
+    }
+
+}
