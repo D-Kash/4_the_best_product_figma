@@ -4,34 +4,31 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    .container{
-        margin: 0 auto;
-        width: 75%;
-        .home-section__content {
-            width: 55%;
-            margin: 0 auto;
-            @include flex-column;
-            align-items: center;
 
-            h1 {
-                font-size: 74px;
-                text-align: center;
-                color: $white;
-                letter-spacing: 0.2px;
-                line-height: 84px;
-                padding: 160px 0 27px;
-                font-family: $primaryFontsBold;
-            }
-            h4 {
-                @include text-h4;
-                color: $white;
-                padding-bottom: 90px;
-                font-family: $primaryFontsExtralight;
-            }
-            button {
-                @include btn;
-                margin-bottom: 243px;
-            }
+    .home-section__content {
+        width: 55%;
+        margin: 0 auto;
+        @include flex-column;
+        align-items: center;
+
+        h1 {
+            font-size: 74px;
+            text-align: center;
+            color: $white;
+            letter-spacing: 0.2px;
+            line-height: 84px;
+            padding: 160px 0 27px;
+            font-family: $primaryFontsBold;
+        }
+        h4 {
+            @include text-h4;
+            color: $white;
+            padding-bottom: 90px;
+            font-family: $primaryFontsExtralight;
+        }
+        button {
+            @include btn;
+            margin-bottom: 243px;
         }
     }
 

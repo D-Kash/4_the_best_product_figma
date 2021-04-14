@@ -5,6 +5,18 @@
     letter-spacing: 0.2px;
 }
 
+@mixin text-h3{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+}
+
+@mixin text-h2{
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+}
+
 @mixin flex-row {
     display: flex;
     flex-direction: row;
