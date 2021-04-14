@@ -1,0 +1,26 @@
+.organize{
+    padding: 293px 0 283px;
+    &-content{
+        display:flex;
+        &__text_button{
+            > h2 {
+                @include text-h2;
+                font-family: $primaryFontsLight;
+            }
+            > h4 {
+                @include text-h4;
+                font-family: $primaryFontsLight;
+                margin: 27px 68px 70px 0;
+            }
+            > button{
+                @include btn;
+            }
+        }
+        &__pictures{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            flex: 1 0;
+        }
+    }
+}
