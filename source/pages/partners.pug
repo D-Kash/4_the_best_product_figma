@@ -1,6 +1,6 @@
 mixin contentItem(name)
-    .partners-content__block
-        p Client Name
+    .partners-content__block-part
+        .partners-content__block Client Name
         img(src="../img/logo_" + name + ".png", alt="logo")
 
 section.partners 
@@ -10,12 +10,14 @@ section.partners
                 h2 Partners
                 h4 Most calendars are designed for teams. Slate is designed for freelancers
             .partners-content__blocks 
-                +contentItem('google')
-                +contentItem('amazon')
-                +contentItem('microsoft')
-                +contentItem('uber')
-                +contentItem('dropbox')
-                +contentItem('google')
-                +contentItem('uber')
-                +contentItem('amazon')
+                .row
+                    +contentItem('google')
+                    +contentItem('amazon')
+                    +contentItem('microsoft')
+                    +contentItem('uber')
+                .row
+                    +contentItem('dropbox')
+                    +contentItem('google')
+                    +contentItem('uber')
+                    +contentItem('amazon')
             button Try For Free
