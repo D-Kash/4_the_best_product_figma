@@ -12,10 +12,11 @@ mixin pricing-content(count, view)
                         a(href="#") Pricing Feature
                 button Order Now
 .pricing 
-    .pricing-content 
-        h2 Pricing
-        h4 Most calendars are designed for teams. Slate is designed for freelancers
-        .pricing-content__views 
-            +pricing-content('0', 'free')
-            +pricing-content('10', 'standart')
-            +pricing-content('99', 'business')
+    .container
+        .pricing-content 
+            h2 Pricing
+            h4 Most calendars are designed for teams. Slate is designed for freelancers
+            .pricing-content__views 
+                +pricing-content('0', 'free')
+                +pricing-content('10', 'standart')
+                +pricing-content('99', 'business')
