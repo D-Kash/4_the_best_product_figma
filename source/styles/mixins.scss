@@ -4,6 +4,12 @@
     letter-spacing: 0.2px;
 }
 
+@mixin text-h5 {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+}
+
 @mixin text-h3{
     font-size: 20px;
     line-height: 28px;

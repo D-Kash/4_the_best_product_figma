@@ -1,7 +1,7 @@
-.partners{
-    .partners-content{
+.partners {
+    .partners-content {
         @include flex-column;
-        position: relative;
+        align-items: center;
         &__title{
             text-align: center;
             h2 {
@@ -18,23 +18,80 @@
             }
         }
         &__blocks{
-            display: flex;
-            flex-direction: row;
+            @include flex-row;
             justify-content: center;
             flex-wrap: wrap;
-            width: 70%;
-            margin: auto;
-            &-block-google{
-                border: 1px solid #D8D8D8;
-                text-align: center;
-                p {
-                    padding: 31px 89.5px 15px;
+            .row1, .row2{
+                display: flex;
+                align-items: center;
+                .partners-content__blocks-google{
+                    text-align: center;
+                    width: 273px;
+                    height: 163px;
+                    border: 1px solid #D8D8D8;
+                    .partners-content__blocks-text{
+                        margin: 31px 0 15px;
+                        font-family: $primaryFontsLight;
+                    }
                 }
-                img {
-                    padding-bottom: 31px;
+                .partners-content__blocks-amazon{
+                    text-align: center;
+                    width: 273px;
+                    height: 160px;
+                    border: 1px solid #D8D8D8;
+                    .partners-content__blocks-text{
+                        margin: 32px 0 15px;
+                        font-family: $primaryFontsLight;
+                    }
                 }
-
+                .partners-content__blocks-microsoft{
+                    text-align: center;
+                    width: 301px;
+                    height: 165px;
+                    border: 1px solid #D8D8D8;
+                    .partners-content__blocks-text{
+                        margin: 25px 0 15px;
+                        font-family: $primaryFontsLight;
+                    }
+                }
+                .partners-content__blocks-uber{
+                    text-align: center;
+                    width: 220px;
+                    height: 165px;
+                    border: 1px solid #D8D8D8;
+                    text-align: center;
+                    .partners-content__blocks-text{
+                        margin: 25px 0 15px;
+                        font-family: $primaryFontsLight;
+                    }
+                }
+                .partners-content__blocks-dropbox{
+                    width: 309px;
+                    height: 164px;
+                    border: 1px solid #D8D8D8;
+                    text-align: center;
+                    .partners-content__blocks-text{
+                        margin: 40px 0 15px;
+                        font-family: $primaryFontsLight;
+                    }
+                }
+                .partners-content__blocks-amazon{
+                    text-align: center;
+                    width: 273px;
+                    height: 160px;
+                    border: 1px solid #D8D8D8;
+                    .partners-content__blocks-text{
+                        margin: 31px 0 15px;
+                        font-family: $primaryFontsLight;
+                    }
+                }
             }
+        }
+        button{
+            @include btn;
+            width: 236px;
+            height: 60px;
+            margin: 81px 0 80px;
         }
     }
 }

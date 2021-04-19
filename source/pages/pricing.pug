@@ -1,0 +1,21 @@
+mixin pricing-content(count, view)
+            .pricing-content__views-items
+                h3 #{view} 
+                h5 Organize across all apps by hand
+                .pricing-content__views-items-cost__block
+                    .cost #{count}
+                    .value
+                        h3 $
+                        h5 Per Month
+                .pricing-content__views-items-links
+                    -for(var x=0;x<5;x++)
+                        a(href="#") Pricing Feature
+                button Order Now
+.pricing 
+    .pricing-content 
+        h2 Pricing
+        h4 Most calendars are designed for teams. Slate is designed for freelancers
+        .pricing-content__views 
+            +pricing-content('0', 'free')
+            +pricing-content('10', 'standart')
+            +pricing-content('99', 'business')

@@ -1,5 +1,6 @@
-.newsletter {
-    &-content{
+.newsletter .container{
+    width: 100% !important;
+    .newsletter-content{
         display: flex;
         margin: 159px 0 52px;
         &__pictures{

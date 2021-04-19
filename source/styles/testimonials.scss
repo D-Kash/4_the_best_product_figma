@@ -1,0 +1,50 @@
+.testimonials{
+    &-content{
+        text-align: center;
+        h2{
+            @include text-h2;
+            margin: 111px 0 90px;
+            font-family: $primaryFontsRegular;
+        }
+        h4 {
+            @include text-h4;
+            margin: 60px auto 60px;
+            font-family: $primaryFontsRegular;
+            width: 80%;
+        }
+        &__item {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 52px;
+                height: 52px;
+            }
+            margin-bottom: 82px;
+            &-title {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 13px;
+                h5 {
+                    @include text-h5;
+                    color: #374754;
+                    font-family: $primaryFontsRegular;
+                }
+                a {
+                    font-size: 15px;
+                    line-height: 28px;
+                    letter-spacing: 0.2px;
+                    color: #252B42;
+                    font-family: $primaryFontsRegular;
+                }
+            }
+        }
+        button{
+            @include btn;
+            padding: 16px 47px;
+            font-family: $primaryFontsRegular;
+            line-height: 28px;
+            margin-bottom: 100px;
+        }
+    }
+}

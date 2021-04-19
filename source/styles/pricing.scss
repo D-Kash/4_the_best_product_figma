@@ -1,0 +1,100 @@
+.pricing{
+    background-color: $background;
+    &-content{
+        text-align: center;
+        h2 {
+            @include text-h2;
+            font-family: $primaryFontsRegular;
+            color: $white;
+            
+        }
+        h4 {
+            @include text-h4;
+            font-family: $primaryFontsRegular;
+            color: $white;
+            width: 30%;
+            margin: 27px auto 197px;
+        }
+        &__views{
+
+            @include flex-row;
+            justify-content: space-around;
+            width: 70%;
+            margin: 0 auto;
+            padding: 110px 0 100px;
+            &-items{
+                // width: 337px;
+                // height: 607px;
+                background-color: $white;
+                border: 1px solid #DEDEDE;
+                box-sizing: border-box;
+                box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+                border-radius: 10px;
+                >h3 {
+                    padding-top: 43px;
+                    @include text-h3;
+                    text-transform: uppercase;
+                    color: #252B42;
+                    font-family: $primaryFontsBold;
+                }
+                >h5 {
+                    @include text-h5;
+                    text-align: center;
+                    color: #374754;
+                    width: 50%;
+                    margin: 3px auto 18px;
+                    font-family: $primaryFontsRegular;
+                }
+                &-cost__block {
+                    @include flex-row;
+                    justify-content: center;
+                    .cost{
+                        font-size: 74px;
+                        line-height: 84px;
+                        letter-spacing: 0.2px;
+                        color: #252B42;
+                        font-family: $primaryFontsBold;
+                        margin-right: 10px;
+                    }
+                    .value {
+                        >h3 {
+                            @include text-h3;
+                            text-align: start;
+                            padding-top: 10px;
+                            color: #252B42;
+                            font-family: $primaryFontsBold;
+                            margin: 0;
+                        }
+                        >h5 {
+                            @include text-h5;
+                            font-family: $primaryFontsRegular;
+                            color: #374754;
+                        }
+
+                    }
+                }
+                &-links {
+                    @include flex-column;
+                    margin-top: 18px;
+                    font-size: 15px;
+                    line-height: 28px;
+                    letter-spacing: 0.2px;
+                    color: #252B42;
+                    font-family: $primaryFontsRegular;
+                    a {
+                        margin: 10px 0;
+                    }
+                }
+                button {
+                    @include btn;
+                    margin: 30px 40px 40px;
+                    font-size: 20px;
+                    line-height: 20px;
+                    letter-spacing: 0.2px;
+                    color: $white;
+                    padding: 18px 75px;
+                }
+            }
+        }
+    }
+}
