@@ -2,30 +2,34 @@
     font-size: 28px;
     line-height: 40px;
     letter-spacing: 0.2px;
+    font-family: $primaryFontsRegular;
 }
 
 @mixin text-h5 {
     font-size: 16px;
     line-height: 23px;
     letter-spacing: 0.1px;
+    font-family: $primaryFontsBold;
 }
 
 @mixin text-h3{
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.1px;
+    font-family: $primaryFontsBold;
 }
 
 @mixin text-h2{
     font-size: 48px;
     line-height: 55px;
     letter-spacing: 0.2px;
+    font-family: $primaryFontsRegular;
 }
 
 @mixin flex-row {
     display: flex;
     flex-direction: row;
-  }
+}
 
 @mixin flex-column {
     display: flex;
