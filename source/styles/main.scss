@@ -20,4 +20,7 @@
 .container{
     margin: 0 auto;
     width: 80%;
+    @media (max-width: $xs) {
+        width: 100%;
+    }
 }

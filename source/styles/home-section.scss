@@ -4,13 +4,19 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 1000px;
+    @media (max-width: $xs) {
+        height: 100%;
+    }
 
     .home-section__content {
         width: 55%;
         margin: 0 auto;
         @include flex-column;
         align-items: center;
-
+        @media (max-width: $xs) {
+            width: 95%;
+        }
+        @include text_substitution;
         h1 {
             font-size: 74px;
             text-align: center;
@@ -19,6 +25,11 @@
             line-height: 84px;
             padding: 160px 0 27px;
             font-family: $primaryFontsBold;
+            @media (max-width: $xs) {
+                @include text-h2;
+                font-family: $primaryFontsRegular;
+                padding: 117px 0 27px;
+            }
         }
         h4 {
             @include text-h4;
@@ -26,6 +37,9 @@
             padding-bottom: 90px;
             text-align: center;
             font-family: $primaryFontsExtralight;
+            @media (max-width: $xs) {
+                padding-bottom: 69px;
+            }
         }
         button {
             @include btn;
@@ -34,5 +48,4 @@
             height: 52px;
         }
     }
-
 }

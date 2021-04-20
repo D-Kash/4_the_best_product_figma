@@ -2,28 +2,24 @@
     font-size: 28px;
     line-height: 40px;
     letter-spacing: 0.2px;
-    font-family: $primaryFontsRegular;
 }
 
 @mixin text-h5 {
     font-size: 16px;
     line-height: 23px;
     letter-spacing: 0.1px;
-    font-family: $primaryFontsBold;
 }
 
 @mixin text-h3{
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.1px;
-    font-family: $primaryFontsBold;
 }
 
 @mixin text-h2{
     font-size: 48px;
     line-height: 55px;
     letter-spacing: 0.2px;
-    font-family: $primaryFontsRegular;
 }
 
 @mixin flex-row {
@@ -45,5 +41,24 @@
     font-family: $primaryFontsLight;
     :focus {
         opacity: 0.5;
+    }
+}
+
+@mixin text_substitution {
+    @media (min-width: 300px){
+        .min-w1000 {
+            display: none;
+        }
+        .min-w300 {
+            display: block;
+        }
+    }
+    @media (min-width: 1000px) {
+        .min-w1000 {
+            display: block;
+        }
+        .min-w300 {
+            display: none;
+        }
     }
 }
