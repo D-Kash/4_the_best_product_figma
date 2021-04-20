@@ -1,0 +1,106 @@
+.contact_us {
+    .container {
+        .contact_us-content {
+            padding-bottom: 102px;
+            &__titls {
+                text-align: center;
+                margin-top: 213px;
+                >h2 {
+                    @include text-h2;
+                    font-family: $primaryFontsRegular;
+                    color: #252B42;
+                }
+                >h4 {
+                    @include text-h4;
+                    font-family: $primaryFontsRegular;
+                    color: #374754;
+                    margin: 27px 27% 60px;
+                }
+            }
+            &__contacts{
+                @include flex-row;
+                &-send_form{
+                    @include flex-column;
+                    
+                    border: 1px solid #DDDDDD;
+                    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+                    border-radius: 20px;
+                    >h3{
+                        text-align: center;
+                        @include text-h3;
+                        font-family: $primaryFontsBold;
+                        color: #252B42;
+                        margin: 52px 0 45px;
+                    }
+                    .your-name, .your-email{
+                        background: #F5F5F5;
+                        border: 1px solid #E8E8E8;
+                        border-radius: 39px;
+                        margin: 0 50px;
+                        padding: 19px 258px 19px 20px;
+                        &::placeholder{
+                            font-size: 15px;
+                            line-height: 16px;
+                            letter-spacing: 0.1px;
+                            color: #18171D;
+                            font-family: $primaryFontsRegular;
+                        }
+                    }
+                    .your-email {
+                        margin: 45px 50px 45px;
+                    }
+                    .your-message {
+                        background: #F5F5F5;
+                        border: 1px solid #E8E8E8;
+                        margin: 0 50px;
+                        padding: 23px 236px 154px 20px;
+                        &::placeholder {
+                            font-size: 15px;
+                            line-height: 16px;
+                            letter-spacing: 0.1px;
+                            color: #18171D;
+                        }
+                    }
+                    button{
+                        @include btn;
+                        margin: 45px auto 52px 50px;
+                        padding: 18px 48px;
+                    }
+                }
+                &-how_to_find {
+                    text-align: center;
+                    margin-left: 60px;
+                    .contacts-items{
+                        @include flex-row;
+                        align-items: center;
+                        margin-top: 28px;
+                        h5{
+                            @include text-h5;
+                            color: #374754;
+                            font-family: $primaryFontsRegular;
+                            margin-top: 20px;
+                        }
+                        .our-address{
+                            flex: 2;
+                        }
+                        .phone {
+                            flex: 1;
+                        }
+                        .mail {
+                            flex: 1;
+                        }
+                    }
+                    .maps{
+                        margin: 70px 0 74px;
+                    }
+                    .social-links{
+                        text-align: start;
+                        a:nth-child(2){
+                            margin: 0 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
