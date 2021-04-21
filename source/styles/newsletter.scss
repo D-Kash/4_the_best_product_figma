@@ -8,10 +8,32 @@
             > img {
                 width: 100%;
             }
+            @media (max-width: $xs) {
+                display: none;
+            }
         }
         &__description{
             margin-left: 113px;
             width: 40%;
+            @include text_substitution;
+            .text_subs, .img_subs{
+                    display: none;
+                }
+            @media (max-width: $xs) {
+                margin: 0;
+                width: 100%;
+                text-align: center;
+                .text_subs {
+                    display: block;
+                    @include text-h4;
+                    font-family: $primaryFontsRegular;
+                }
+                .img_subs {
+                    display: block;
+                    width: 100%;
+                    padding: 95px 0 117px;
+                }
+            }
             > h3{
                 @include text-h3;
                 font-family: $primaryFontsBold;
@@ -20,7 +42,7 @@
             > h2{
                 margin: 17px 0 35px;
                 @include text-h2;
-                font-family: $primaryFontsLight;
+                font-family: $primaryFontsRegular;
             }
             &_text {
                 margin-left: 10px;
@@ -29,7 +51,7 @@
                 font-size: 18px;
                 line-height: 25px;
                 letter-spacing: 0.2px;
-                font-family: $primaryFontsLight;
+                font-family: $primaryFontsRegular;
                 }
             }
             &_form {
@@ -59,7 +81,20 @@
                     height: 58px;
                     margin-left: 12px;
                 }
+                @media (max-width: $xs) {
+                    @include flex-column;
+                    input{
+                        width: 100%;
+                    }
+                    button{
+                        width: 100%;
+                        margin: 12px 0 114px;
+                    }
+                }
             }
+        }
+        @media (max-width: $xs) {
+            @include flex-column;
         }
     }
 }

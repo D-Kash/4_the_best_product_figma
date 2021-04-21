@@ -62,3 +62,22 @@
         }
     }
 }
+
+@mixin block_partners {
+    @media (min-width: 300px){
+        .minb-w1000 {
+            display: none;
+        }
+        .minb-w300 {
+            display: block;
+        }
+    }
+    @media (min-width: 1000px) {
+        .minb-w1000 {
+            display: flex;
+        }
+        .minb-w300 {
+            display: none;
+        }
+    }
+}

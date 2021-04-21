@@ -11,10 +11,20 @@
             margin: 60px auto 60px;
             font-family: $primaryFontsRegular;
             width: 80%;
+            @media (max-width: $xs) {
+                font-size: 13.5256px;
+                line-height: 17px;
+                text-align: center;
+                letter-spacing: 0.16907px;
+                font-family: $primaryFontsBold;
+                color: #374754;
+                width: 87%;
+            }
         }
         &__item {
             display: flex;
             justify-content: center;
+            @include text_substitution;
             img {
                 width: 52px;
                 height: 52px;

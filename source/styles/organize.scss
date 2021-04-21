@@ -1,9 +1,19 @@
 .organize{
     padding: 293px 0 283px;
+    @media (max-width: $xs) {
+        padding: 90px 0 86px;
+    }
     &-content{
         display:flex;
+        @media (max-width: $xs) {
+            flex-direction: column;
+            text-align: center;
+        }
         &__text_button{
             width: 50%;
+            @media (max-width: $xs) {
+                width: 100%;
+            }
             > h2 {
                 @include text-h2;
                 font-family: $primaryFontsLight;
@@ -12,17 +22,25 @@
                 @include text-h4;
                 font-family: $primaryFontsLight;
                 margin: 27px 68px 70px 0;
+                @media (max-width: $xs) {
+                    margin: 27px auto 70px;
+                }
             }
             > button{
                 @include btn;
                 width: 236px;
                 height: 60px;
             }
+            @include text_substitution
         }
         &__pictures{
             width: 50%;
             > img {
                 width: 100%;
+            }
+            @media (max-width: $xs) {
+                width: 100%;
+                padding-top: 75px;
             }
         }
     }

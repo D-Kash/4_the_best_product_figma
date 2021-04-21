@@ -15,6 +15,9 @@
                 padding: 27px 0 90px;
                 @include text-h4;
                 font-family: $primaryFontsLight;
+                @media (max-width: $xs) {
+                   width: 100%;
+                }
             }
         }
         &__blocks{
@@ -24,6 +27,9 @@
             .row1, .row2{
                 display: flex;
                 align-items: center;
+                @media (max-width: $xs) {
+                    @include flex-column;
+                }
                 .partners-content__blocks-google{
                     text-align: center;
                     width: 273px;
@@ -32,6 +38,10 @@
                     .partners-content__blocks-text{
                         margin: 31px 0 15px;
                         font-family: $primaryFontsLight;
+                    }
+                    @media (max-width: $xs) {
+                        width: 100%;
+                        margin: 0 auto;
                     }
                 }
                 .partners-content__blocks-amazon{
@@ -43,6 +53,11 @@
                         margin: 32px 0 15px;
                         font-family: $primaryFontsLight;
                     }
+                    @media (max-width: $xs) {
+                        width: 100%;
+                        margin: 30px auto;
+
+                    }
                 }
                 .partners-content__blocks-microsoft{
                     text-align: center;
@@ -52,6 +67,10 @@
                     .partners-content__blocks-text{
                         margin: 25px 0 15px;
                         font-family: $primaryFontsLight;
+                    }
+                    @media (max-width: $xs) {
+                        width: 100%;
+                        margin: 0 auto;
                     }
                 }
                 .partners-content__blocks-uber{
@@ -86,6 +105,7 @@
                     }
                 }
             }
+            @include block_partners;
         }
         button{
             @include btn;

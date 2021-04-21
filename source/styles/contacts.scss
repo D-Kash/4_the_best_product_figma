@@ -5,6 +5,10 @@
             &__titls {
                 text-align: center;
                 margin-top: 213px;
+                @include text_substitution;
+                @media (max-width: $xs) {
+                    margin-top: 160px;
+                }
                 >h2 {
                     @include text-h2;
                     font-family: $primaryFontsRegular;
@@ -15,10 +19,16 @@
                     font-family: $primaryFontsRegular;
                     color: #374754;
                     margin: 27px 27% 60px;
+                    @media (max-width: $xs) {
+                        margin: 19px 0 79px;
+                    }
                 }
             }
             &__contacts{
                 @include flex-row;
+                @media (max-width: $xs) {
+                    flex-direction: column-reverse;
+                }
                 &-send_form{
                     @include flex-column;
                     
@@ -38,22 +48,42 @@
                         border-radius: 39px;
                         margin: 0 50px;
                         padding: 19px 258px 19px 20px;
+                        @media (max-width: $xs) {
+                            width: 280px;
+                            height: 54px;
+                            margin: 0 auto 45px;
+                            padding: 0;
+                        }
                         &::placeholder{
                             font-size: 15px;
                             line-height: 16px;
                             letter-spacing: 0.1px;
                             color: #18171D;
                             font-family: $primaryFontsRegular;
+                            @media (max-width: $xs) {
+                                margin: 0 auto;
+                                padding: 20px;
+                            }
                         }
                     }
                     .your-email {
                         margin: 45px 50px 45px;
+                        @media (max-width: $xs) {
+                            margin: 0 auto 45px;
+                            padding: 0;
+                        }
                     }
                     .your-message {
                         background: #F5F5F5;
                         border: 1px solid #E8E8E8;
                         margin: 0 50px;
                         padding: 23px 236px 154px 20px;
+                        @media (max-width: $xs) {
+                            margin: 0 auto;
+                            width: 280px;
+                            padding: 23px 163px 154px 20px;
+                            height: 193px;
+                        }
                         &::placeholder {
                             font-size: 15px;
                             line-height: 16px;
@@ -65,15 +95,31 @@
                         @include btn;
                         margin: 45px auto 52px 50px;
                         padding: 18px 48px;
+                        @media (max-width: $xs) {
+                            margin: 45px 184px 52px 37px;
+                            padding: 18px;
+                        }
                     }
                 }
                 &-how_to_find {
                     text-align: center;
                     margin-left: 60px;
+                    @media (max-width: $xs) {
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column-reverse;
+                        width: 95%;
+                    }
                     .contacts-items{
                         @include flex-row;
                         align-items: center;
                         margin-top: 28px;
+                        @media (max-width: $xs) {
+                            @include flex-column;
+                            align-items: flex-start;
+                            text-align: start;
+                            margin: 0 0 78px;
+                        }
                         h5{
                             @include text-h5;
                             color: #374754;
@@ -82,21 +128,49 @@
                         }
                         .our-address{
                             flex: 2;
+                            @media (max-width: $xs) {
+                                display: flex;
+                                align-items: center;
+                                &-img{
+                                    margin-right: 20px;
+                                }
+                            }
                         }
                         .phone {
                             flex: 1;
+                            @media (max-width: $xs) {
+                                display: flex;
+                                align-items: center;
+                                &-img{
+                                    margin-right: 20px;
+                                }
+                            }
                         }
                         .mail {
                             flex: 1;
+                            @media (max-width: $xs) {
+                                display: flex;
+                                align-items: center;
+                                &-img{
+                                    margin-right: 20px;
+                                }
+                            }
                         }
                     }
                     .maps{
                         margin: 70px 0 74px;
+                        @media (max-width: $xs) {
+                            display: none;
+                        }
                     }
                     .social-links{
                         text-align: start;
                         a:nth-child(2){
                             margin: 0 32px;
+                        }
+                        @media (max-width: $xs) {
+                            text-align: center;
+                            margin-bottom: 92px;
                         }
                     }
                 }
